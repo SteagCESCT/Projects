@@ -1,4 +1,4 @@
-# Porject Documentaions 
+# Project Documentaions 
 
 This repo include Porject Documentaions  to learn rapid prototyping.
 
