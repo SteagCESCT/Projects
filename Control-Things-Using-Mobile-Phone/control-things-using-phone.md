@@ -138,9 +138,22 @@ after successful compilation you can see **Done Compiling**
 
 #### 2.5 Upload the code into Arduino uno 
 
-You can Compile and verify your code by clicking the **Verify** button on Arduino IDE, this process will check syntax errors. 
+After successful compilation we can upload the code into Arduino Uno Devlopment board. for that we need click ***Upload* button.
 
-![verify code](src/images/verifycode.png)
+![uploadcode](src/images/uploadcode.png)
+
+before upaloading we need to select the devlopment board from the from Arduino IDE **Tools -> Board**  and **Port** from Arduino IDE **Tools -> Port**. 
+
+![selectport](src/images/selectport.png) 
+<br><br>
+
+![selectboard](src/images/selectboard.png)
+
+here I selected **Arduino Uno** as board and **COM26** as **Port**. 
+
+
+
+
 
 
 
