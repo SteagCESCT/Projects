@@ -106,6 +106,23 @@ Syntax `Serial.begin(speed);` here we used speed as 9600bps.
 
 **Syntax** `pinMode(pin, mode)` :-  **pin** : the Arduino pin number to set the mode of, **mode** :  INPUT, OUTPUT, or INPUT_PULLUP. 
 
+* `void loop()` :- After creating a **setup()** function, which initializes and sets the initial values, the **loop()** function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+
+* `Serial.available()` :-  Get the number of bytes (characters) available for reading from the serial port, it used to reply only when we receive data.
+
+* `data = Serial.read();` :- Reads incoming serial data and store into the **data** varible that we declare in the first place. 
+
+* `if` and `else` :- The if statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
+
+* The if…​else allows greater control over the flow of code than the basic if statement, by allowing multiple tests to be grouped. An else clause (if at all exists) will be executed if the condition in the if statement results in false. The else can proceed another if test, so that multiple, mutually exclusive tests can be run at the same time.
+
+* `digitalWrite(13,HIGH);` :- Write a HIGH value to a digital pin. 
+
+* `digitalWrite(13,LOW);` :- Write LOW value to a digital pin. 
+
+**Syntax** `digitalWrite(pin, value)` , **Parameters** `pin` : the Arduino pin number. `value` : HIGH or LOW.
+
+
 
 
 
