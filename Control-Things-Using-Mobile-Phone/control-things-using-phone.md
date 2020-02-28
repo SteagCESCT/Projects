@@ -26,6 +26,60 @@ Using Arduino and Andoird App we can make the idea into a relaity, since the Ard
 
 ![Diagram](src/images/diagram.png)
 
+<hr>
 
-#### Setps
-1. 
+
+### Things we need
+
+1. Arduino Uno
+2. HC-05 Bluetooth Module
+3. Led's
+3. Jumber Wires
+4. Breadboard
+
+<hr>
+
+
+### Step 1: Arduino Setup
+
+#### 1.1: Install Arduino IDE 
+
+Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and install it on your computer.
+
+![Arduino IDE Download](../docs/images/arduinoide01.JPG)
+
+#### 1.2 walk-through the Arduino Introduction page to learn basics
+If you are new to the arduino system, you can learn the [ Arduino basics from here](arduino-intro.md) , after reading then go to the next step. 
+
+### Step 2: Coding
+
+#### 2.1 Open Arduino IDE and Start a new Sketch 
+
+![Arduino IDE Sketch](../docs/images/arduinoide02.JPG)
+
+#### 2.2 Copy and Paste the Code
+
+````
+char data = 0; //Variable for storing received data
+
+void setup()
+{
+  Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
+  pinMode(13, OUTPUT);        //Sets digital pin 13 as output pin
+
+}
+void loop()
+{
+  if (Serial.available() > 0) // Send data only when you receive data:
+  {
+    data = Serial.read();      //Read the incoming data and store it into variable data
+    if (data == 'A')           //Checks whether value of data is equal to "A"
+      digitalWrite(13, HIGH);  //If value is "A" then LED turns ON
+    else if (data == 'B')      //Checks whether value of data is equal to "B"
+      digitalWrite(13, LOW);   //If value is "B" then LED turns OFF
+  }
+}
+````
+
+
+
