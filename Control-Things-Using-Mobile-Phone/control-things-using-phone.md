@@ -181,5 +181,4 @@ You can see logic in action.
 
 ![test gif](src/images/testOne.gif)
 
-![send char](src/images/testOne.mp4)
 
