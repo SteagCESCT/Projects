@@ -10,9 +10,9 @@ This repo include Porject Documentaions  to learn rapid prototyping.
 
 
 1. [Control Things using Mobile Phone](Control-Things-Using-Mobile-Phone/control-things-using-phone.md) (beginner)
-2. [Control things using Voice](https://github.com/SteagCSCT/Projects/tree/master/Control%20Things%20Using%20Voice) (intermediate)
-3. [Digital Thermostat](https://github.com/SteagCSCT/Projects/tree/master/Digital%20Thermostat) (beginner)
-4. [Digital Scale](https://github.com/SteagCSCT/Projects/tree/master/Digital%20Scale) (beginner)
+2. [Control things using Voice](Control-Things-Using-Voice/control-things-using-voice.md) (intermediate)
+3. [Digital Thermostat](Digital-Thermostat/digital-thermostat.md) (beginner)
+4. [Digital Scale](Digital-Scale/digital%20Scale.md) (beginner)
 
 
 <hr>
