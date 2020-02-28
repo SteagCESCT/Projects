@@ -181,4 +181,34 @@ You can see logic in action.
 
 ![test gif](src/images/testOne.gif)
 
+<hr>
+
+### Step 4: Building Android Application
+
+To build Mobile application we are using **MIT APP INVENTOR**, MIT App Inventor for Android is an open-source web application originally provided by Google, and now maintained by the Massachusetts Institute of Technology (MIT).App Inventor lets you develop applications for Android phones using a web browser and either a connected phone or emulator.
+
+![MIT App inventor](src/images/mitlogo.png)
+
+
+#### Flow chart 
+
+![MIT App inventor flowchart](src/images/mitflow.png)
+
+App inventor have two part
+
+1. The App Inventor Designer, where you select the components for your app.
+2. The App Inventor Blocks Editor, where you assemble program blocks that specify how the components should behave. You assemble programs visually, fitting pieces together like pieces of a puzzle.
+
+Here we are going to control LED light by using our phone , for this we need an Application so we are using MIT App inventor.
+
+
+#### 4.1 UI Devlopment 
+
+The App Inventor Components are located on the left hand side of the Designer Window under the title Palette. Components are the basic elements you use to make apps on the Android phone. They're like the ingredients in a recipe. Some components are very simple, like a Label component, which just shows text on the screen, or a Button component that you tap to initiate an action.
+
+![app ui](src/images/appui.png)
+
+We need add two Buttons For **Turn ON** and **Turn OFF** the LED , and One **Listpicker** for selecting the bluetooth device. also we need to add the Bluetooth Client it avilable under the Connectivity tab.
+
+![app ui](src/images/appui2.png)
 
