@@ -53,11 +53,19 @@ If you are new to the arduino system, you can learn the [ Arduino basics from he
 
 ### Step 2: Coding
 
-#### 2.1 Open Arduino IDE and Start a new Sketch 
+#### 2.1 Algorithm
+
+![algorithm](src/images/Arduino_BT_Algoritham.png)
+
+
+<hr>
+
+
+#### 2.2 Open Arduino IDE and Start a new Sketch 
 
 ![Arduino IDE Sketch](../docs/images/arduinoide02.JPG)
 
-#### 2.2 Copy and Paste the Code
+#### 2.3 Copy and Paste the Code
 
 ````
 char data = 0; //Variable for storing received data
@@ -80,6 +88,27 @@ void loop()
   }
 }
 ````
+<hr>
+
+
+#### 2.4 Code Overview
+
+
+* `char data = 0;` :- **data** is **char** data type and it used to hold the incoming data from Android Application that receved vis bluetooth interface. 
+
+* `void setup()` :- The **setup()** function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The **setup()** function will only run once, after each powerup or reset of the Arduino board.
+
+* `Serial.begin(9600);` :- Sets the data rate in bits per second (baud) for serial data transmission , 
+
+Syntax `Serial.begin(speed);` here we used speed as 9600bps. 
+
+* `pinMode(13,OUTPUT)` :- Configures the specified pin to behave either as an input or an output. See the Digital Pins page for details on the functionality of the pins.
+
+**Syntax** `pinMode(pin, mode)` :-  **pin** : the Arduino pin number to set the mode of, **mode** :  INPUT, OUTPUT, or INPUT_PULLUP. 
+
+
+
+
 
 
 
