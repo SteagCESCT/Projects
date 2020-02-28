@@ -149,7 +149,22 @@ before upaloading we need to select the devlopment board from the from Arduino I
 
 ![selectboard](src/images/selectboard.png)
 
+
 here I selected **Arduino Uno** as board and **COM26** as **Port**. 
+
+Then click **Upload**
+
+![doneupload](src/images/doneupload.JPG)
+
+<hr>
+
+### Step 3: Testing
+
+We can test the project from halfway without bluetooth module by using **Serial Monitor** . 
+
+#### 3.1 Connect LED 
+
+
 
 
 
