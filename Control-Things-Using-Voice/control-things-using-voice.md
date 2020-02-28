@@ -21,26 +21,26 @@ In default Arduino IDE only Support Native boards like UNO,Nano.. etc , so we ne
 
 Open Arduino IDE and add additional Board URL ` File => Preference (Ctrl + Comma) `
 
-![additional Board URL File](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/001.jfif)
+![additional Board URL File](src/images/001.jfif)
 
 
 In Additional Boards Manager, click add and paste the URL there ` http://arduino.esp8266.com/stable/package_esp8266com_index.json `
 And click "OK".
 
-![nodemcu](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/002.jfif)
+![nodemcu](src/images/002.jfif)
 
-![nodemcu](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/003.jfif)
+![nodemcu](src/images/003.jfif)
 
 
 **Download Board Definitions**
 
 Open Board Manager by going to ` Tools => Board => Boards Manger `
 
-![nodemcu](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/004.jfif)
+![nodemcu](src/images/004.jfif)
 
 Open Boards Manager and search for NodeMCU:
 
-![nodemcu](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/005.jfif)
+![nodemcu](src/images/005.jfif)
 
 `Note: It only appears if you set the NodeMCU Board URL (1.1)`
 
@@ -48,11 +48,11 @@ Open Boards Manager and search for NodeMCU:
 
 For MQTT we are using Adafruit.io broker and for that we need to install Adafruit MQTT library . `Sketch => Include library => Manage Libraries`
 
-![mqtt](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/006.jfif)
+![mqtt](src/images/006.jfif)
 
 In the following window type `mqtt` and just wait a sec , it will load mqtt related lib .
 
-![mqtt](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/007.JPG)
+![mqtt](src/images/007.JPG)
 
 Now we can see the Adafruit MQTT Lib on the Third one , select the latest verison and click install . that's all.
 
@@ -60,39 +60,39 @@ Now we can see the Adafruit MQTT Lib on the Third one , select the latest veriso
 
 We are using [Adafruit.io](https://io.adafruit.com) as the MQTT Broker and it's also have dashboard with lot of widgets  .So first you need to create an account if you did't have one [Adafruit.io](https://io.adafruit.com) or login with your credentials. 
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/008.png)
+![adafruit](src/images/008.png)
 
 after login , create MQTT feed by clicking **Feeds** on the left menu bar and Click `create a New Feed` under the `Actions` bar .
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/009.png)
+![adafruit](src/images/009.png)
 
 In the following window give a name for our new Feed , like **onoff** and click create. next we need to setup a dashboard for UI control , for that click **Dashboard** on the left menu bar and clikc `create a New Dashboard` under `bar`.
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/010.png)
+![adafruit](src/images/010.png)
 
 give a name to our new dashboard , I just put **Switch** . 
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/011.png)
+![adafruit](src/images/011.png)
 
 Now we can see the dashbord listed under the dashboard menu .
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/012.png)
+![adafruit]src/images/012.png)
 
 for editing the dashboard , select the dashboard by check the check box and click `create a new block` on top right menu .and the following window select the **Toggle** .
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/013.png)
+![adafruit](src/images/013.png)
 
 on the next step select the right Group/Feed and clikc `Next setp`.
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/014.png)
+![adafruit](src/images/014.png)
 
 next we setup the `Block` , just leave as default and click `Create block`
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/015.png)
+![adafruit](src/images/015.png)
 
 and We are done with the cloud part , our dashbord will look like this .
 
-![adafruit](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/016.png)
+![adafruit](src/images/016.png)
 
 
 ## 3.Programming 
@@ -101,7 +101,7 @@ Next upload the code , for that we need set target board in the Arduino IDE.
 
 `Tools => Board => NodeMCU ESP-12E`
 
-![nodemcu](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/017.jfif)
+![nodemcu](src/images/017.jfif)
 
 Select Port in same menu (in my case, I have Port-3).
 
@@ -259,21 +259,21 @@ Replace the WiFi Name with your WiFi SSID name Password
 ```
  In this code block re-place the MQTT_NAME with your Adafruit.io User name , and MQTT_PASS with AIO Key .
 
-![adafruitio](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/018.png)
+![adafruitio](src/images/018.png)
 
 
 after uplaoding the code open your serial monitor (9600 buad rate) so we can see some usefull messages ,
 
-![serialmonitor](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/019.png)
+![serialmonitor](src/images/019.png)
 
 
 ## 4. Testing Adafruit.io 
 
 After the sketch uploading everything is fine we can now test the adafruit cloud dashboard .
 
-![serialmonitor](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/020.png)
+![serialmonitor](src/images/020.png)
 
-![serialmonitor](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/021.png)
+![serialmonitor](src/images/021.png)
 
 we can simply control the LED that connected to the NodeMCU by Toggle the Digital Switch . Yes , we just did some intenet connected Devices . we can now control the light anywhere in the world .
 
@@ -291,50 +291,41 @@ now we are just connected the our hardware module to the internet and we can now
  first we need to create an account [IFTTT](https://ifttt.com/).and click ***New Applet***
 
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/022.png)
+![IFTTT](src/images/022.png)
 
 Click ***this*** button and select the google assistant from the service .
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/023.png)
+![IFTTT](src/images/023.png)
 
 next choose a trigger from the listed items , for our application I used ***Say a simple phrase***
 
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/024.png)
+![IFTTT](src/images/024.png)
 
 next we need to set Say a simple phrase , `This trigger fires when you say “Ok Google” to the Google Assistant followed by a phrase you choose. For example, say “Ok Google, I’m running late” to text a family member that you’re on your way home.`
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/025.png)
+![IFTTT](src/images/025.png)
 
 next select the ***that***
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/026.png)
+![IFTTT](src/images/026.png)
 
  we need select a ***Choose action service*** , we choosed Adafruit service
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/027.png)
+![IFTTT](src/images/027.png)
 
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/028.png)
+![IFTTT](src/images/028.png)
 
 so next we need Complete action fields by gaving the Feed name and Data to save
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/029.png)
+![IFTTT](src/images/029.png)
 
 we completed the work and as last step we need to proceeds ***Review and finish***
 
-![IFTTT](https://raw.githubusercontent.com/KeralaHardwareCommunity/MFK18_Workshop/master/img/030.png)
+![IFTTT](src/images/030.png)
 
 and we need to the same IFTTT Applet for Turn Off the Light .after that use your  Google Assistant in your mobile phone to control devices
 
 
 ## Thank You.
-
-
-
-
-
-
-
-
-
