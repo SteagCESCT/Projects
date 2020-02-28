@@ -122,8 +122,25 @@ Syntax `Serial.begin(speed);` here we used speed as 9600bps.
 
 **Syntax** `digitalWrite(pin, value)` , **Parameters** `pin` : the Arduino pin number. `value` : HIGH or LOW.
 
+<hr>
 
 
+#### 2.5 Compile the code 
+
+You can Compile and verify your code by clicking the **Verify** button on Arduino IDE, this process will check syntax errors. 
+
+![verify code](src/images/verifycode.png)
+
+after successful compilation you can see **Done Compiling**
+
+![done verify](src/images/doneverify.JPG)
+<hr>
+
+#### 2.5 Upload the code into Arduino uno 
+
+You can Compile and verify your code by clicking the **Verify** button on Arduino IDE, this process will check syntax errors. 
+
+![verify code](src/images/verifycode.png)
 
 
 
