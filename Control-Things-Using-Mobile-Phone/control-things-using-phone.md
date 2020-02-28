@@ -179,7 +179,7 @@ Open the **Serial Monitor**  and try enter **A** or **B** and press enter or cli
 You can see logic in action.
 
 
-![test gif](src/images/testOne.png)
+![test gif](src/images/testOne.gif)
 
 ![send char](src/images/testOne.mp4)
 
