@@ -221,5 +221,32 @@ Actually we don't need any coding to do our app , we just need to arrange some l
 ![app logic](src/images/applogic.JPG)
 
 
+we have main two code blocks. 
 
+1. **Bluetooth selection** 
+: we are using **ListPicker** for the bluetooth selection.
+
+![app listpicker](src/images/applogic1.png)
+
+ListPicker have two state , one is BeforePicking state,in here we are loading bluetooth names in the list, second is AfterPicking here we are connecting the Bluetooth device that loaded on the ListPicker BeforePicking state , and also we are changing the text of the ListPicker in to Connected when we establish a bluetooth connection.
+
+2. **Button Activity**  we are using two **buttons** for contorling LED state
+
+![app listpicker](src/images/applogic2.png)
+
+when we click a button bluetooth will transmit a text to device that connectedw with phone(we alredy connected a bluetooth device using ListPicker Bluetooth Selection). here if we press the Button2 it will transmit letter **'A'** and if we press the Button3 it will transmit letter **'B'** ,that's all.
+
+#### 4.3 Download the application 
+
+We need to install applicaion on our mobile phone , **.apk** file can be download by clicking Build button on the top navigavtion panel.
+
+![app downlaod](src/images/appdownload.png)
+
+
+Building Apk will take less than one minute time.
+
+
+![app build](src/images/appbuild.png)
+
+Download the .apk file and install it on your android phone.next upload bluetooth progarmme to your board and connect with bluetooth module.
 
