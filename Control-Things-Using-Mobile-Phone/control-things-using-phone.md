@@ -164,13 +164,22 @@ We can test the project from halfway without bluetooth module by using **Serial 
 
 #### 3.1 Connect LED 
 
+Connect the **LED Postive** pin on **Arduino Pin 13** and **Negative Pin** on **Arduino Grond (GND)**
+
+![arduinoandled](src/images/ledandarduino.png)
+
+After connecting the LED connect the USB cable and Open **Serial Monitor** .
+
+![serial monitor](src/images/serialmonitor.png)
+
+Open the **Serial Monitor**  and try enter **A** or **B** and press enter or click **send** button. 
+
+![send char](src/images/sendchar.png)
+
+You can see logic in action.
 
 
+![test gif](src/images/testOne.png)
 
-
-
-
-
-
-
+![send char](src/images/testOne.mp4)
 
