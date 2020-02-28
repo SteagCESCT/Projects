@@ -212,3 +212,14 @@ We need add two Buttons For **Turn ON** and **Turn OFF** the LED , and One **Lis
 
 ![app ui](src/images/appui2.png)
 
+Here is Simple design if the Application User Interface.you can see the components list that we used in the app in right side.
+
+#### 4.2 Adding App Logic
+
+Actually we don't need any coding to do our app , we just need to arrange some logic blocks in a order . to get into logic you need to click the **block** button on the right corner . 
+
+![app logic](src/images/applogic.JPG)
+
+
+
+
