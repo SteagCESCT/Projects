@@ -250,3 +250,46 @@ Building Apk will take less than one minute time.
 
 Download the .apk file and install it on your android phone.next upload bluetooth progarmme to your board and connect with bluetooth module.
 
+<hr>
+
+### Setp 5: Interfacing Arduino with Bluetooth Module. 
+
+Next we need to connect the Arduino into Bluetooth module.here we are using **HC-05** It is based on **Bluetooth SPP** (Serial Port Protocol) module,designed for transparent wireless serial connection setup.he HC-05 Bluetooth Module can be used in a Master or Slave configuration.This serial port bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps Modulation with complete 2.4GHz radio transceiver and baseband. It uses CSR Bluecore 04‐External single chip Rluetooth system with CMOS technology and with AFH (Adaptive Frequency Hopping Feature).datasheet :- https://www.gme.cz/data/attachments/dsh.772-148.1.pdf
+
+![hc05](src/images/hc05.jpg)
+
+#### 5:1 Pin Description
+
+The HC-05 Bluetooth Module has 6pins. They are as follows:
+
+* ENABLE: When enable is pulled LOW, the module is disabled which means the module will not turn on and it fails to communicate.When enable is left open or connected to 3.3V, the module is enabled i.e the module remains on and communication also takes place.
+
+* Vcc: Supply Voltage 3.3V to 5V
+
+* GND: Ground Pin
+
+* TXD & RXD: These two pins acts as an UART interface for communication
+
+* STATE: It acts as a status indicator.When the module is not connected to / paired with any other bluetooth device,signal goes Low.At this low state,the led flashes continuously which denotes that the module is not paired with other device.When this module is connected to/paired with any other bluetooth device,the signal goes High. At this high state,the led blinks with a constant delay say for example 2s delay which indicates that the module is paired.
+
+* BUTTON SWITCH: This is used to switch the module into AT command mode. To enable AT command mode,press the button switch for a second. With the help of AT commands,the user can change the parameters of this module but only when the module is not paired with any other BT device.If the module is connected to any other bluetooth device, it starts to communicate with that device and fails to work in AT command mode.
+
+
+#### 5:2 Connection Diagram
+
+
+![connection pinout](src/images/hc05connection.png)
+
+Connect the arduino on hc-05 bluetooth module with jumbers or breadboard.
+
+
+
+#### Demo
+
+* Connect arduino and bluetooth
+* Open android app 
+* Connect bluetooth with app
+
+![demo](src/images/demo.gif)
+
+
