@@ -54,3 +54,40 @@ If you are new to the arduino system, you can learn the [ Arduino basics from he
 
 ![algorithm](src/images/algorithm.png)
 
+<hr>
+
+#### Ultrasonic Sensor
+
+Ultrasonic sensors work by sending out a sound wave at a frequency above the range of human hearing.  The transducer of the sensor acts as a microphone to receive and send the ultrasonic sound. 
+
+It emits an ultrasound at 40 000 Hz which travels through the air and if there is an object or obstacle on its path It will bounce back to the module. Considering the travel time and the speed of the sound you can calculate the distance.
+
+![HCSR04](src/images/hcsr04working.png)
+
+The HC-SR04 Ultrasonic Module has 4 pins, Ground, VCC, Trig and Echo. The Ground and the VCC pins of the module needs to be connected to the Ground and the 5 volts pins on the Arduino Board respectively and the trig and echo pins to any Digital I/O pin on the Arduino Board.
+
+
+![HCSR04](src/images/HCSR04pinout.jpg)
+
+<hr>
+
+#### LCD Module
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<!-- #### 2.2 Open Arduino IDE and Start a new Sketch 
+
+![Arduino IDE Sketch](../docs/images/arduinoide02.JPG)
+
+#### 2.3 Copy and Paste the Code
+ -->
