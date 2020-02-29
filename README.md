@@ -1,6 +1,6 @@
 # Project Documentaions 
 
-This repo include Porject Documentaions  to learn rapid prototyping.
+This repo include Project Documentaions  to learn rapid prototyping.
 
 ### Do It Yourself Projects 
 
