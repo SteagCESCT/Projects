@@ -286,7 +286,7 @@ Connect the arduino on hc-05 bluetooth module with jumbers or breadboard.
 
 #### Demo
 
-* Connect arduino and bluetooth
+* Connect arduino and bluetooth Module
 * Open android app 
 * Connect bluetooth with app
 
