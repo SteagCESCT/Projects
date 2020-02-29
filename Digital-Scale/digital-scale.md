@@ -78,7 +78,7 @@ Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and install 
 #### 1.2 walk-through the Arduino Introduction page to learn basics
 If you are new to the arduino system, you can learn the [ Arduino basics from here](arduino-intro.md) , after reading then go to the next step. 
 
-### Step 2: Coding
+### Step 2: Programming
 
 #### 2.1 Algorithm
 
@@ -91,6 +91,8 @@ If you are new to the arduino system, you can learn the [ Arduino basics from he
 ![Arduino IDE Sketch](../docs/images/arduinoide02.JPG)
 
 #### 2.3 Read then Copy and Paste the Code
+
+### Tesing HCSR04 UltraSonic Module
 
 <pre>
 
@@ -128,4 +130,61 @@ If you are new to the arduino system, you can learn the [ Arduino basics from he
 <font color="#000000">}</font>
 
 </pre>
+
+#### 2.4 Compile the code 
+
+You can Compile and verify your code by clicking the **Verify** button on Arduino IDE, this process will check syntax errors. 
+
+![verify code](../docs/images/verifycode.png)
+
+after successful compilation you can see **Done Compiling**
+
+![done verify](../docs/images/doneverify.JPG)
+<hr>
+
+#### 2.5 Upload the code into Arduino uno 
+
+After successful compilation we can upload the code into Arduino Uno Devlopment board. for that we need click ***Upload* button.
+
+![uploadcode](../docs/images/uploadcode.png)
+
+before upaloading we need to select the devlopment board from the from Arduino IDE **Tools -> Board**  and **Port** from Arduino IDE **Tools -> Port**. 
+
+![selectport](../docs/images/selectport.png) 
+<br><br>
+
+![selectboard](../docs/images/selectboard.png)
+
+
+here I selected **Arduino Uno** as board and **COM26** as **Port**. 
+
+Then click **Upload**
+
+![doneupload](../docs/images/doneupload.JPG)
+
+<hr>
+
+
+
+#### 2.5 Connect the HCSR04 Module to Arduino
+
+![HCSR04 Connection](src/images/testhcsr04.png)
+
+<hr>
+
+We can test the project from halfway without LCD module by using **Serial Monitor** .
+
+After connecting the HCSR04 on arduino connect the USB cable and Open **Serial Monitor** .
+
+![serial monitor](../docs/images/serialmonitor.png)
+
+![Distance Test](src/images/distanceTest.gif)
+
+We can see the distance measured from the Ultrasonic sensor from the Serial Monitor Window
+
+![Serial Distance](src/images/serialDistance.PNG)
+
+
+<hr>
+
 
