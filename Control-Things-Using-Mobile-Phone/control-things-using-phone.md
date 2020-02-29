@@ -295,6 +295,18 @@ Connect the arduino on hc-05 bluetooth module with jumbers or breadboard.
 <hr>
 <hr>
 
+#### ToDO
+
+[ ] Add more led's Arduino and Add more button on the Application.
+
+[ ] Try Relay module and control the AC Signal 
+
+[ ] Read sensor data from Arduino to Mobile Application
+
+
+<hr><hr>
+
+
 ### Thank You, Hope you enjoyed!
 
 Please share your feedback.
