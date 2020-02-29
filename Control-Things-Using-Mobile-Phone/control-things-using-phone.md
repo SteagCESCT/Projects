@@ -292,4 +292,9 @@ Connect the arduino on hc-05 bluetooth module with jumbers or breadboard.
 
 ![demo](src/images/demo.gif)
 
+<hr>
+<hr>
 
+### Thank You, Hope you enjoyed!
+
+Please share your feedback.
