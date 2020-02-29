@@ -67,27 +67,30 @@ If you are new to the arduino system, you can learn the [ Arduino basics from he
 
 #### 2.3 Copy and Paste the Code
 
-````
-char data = 0; //Variable for storing received data
+<pre>
+<font color="#00979c">char</font> <font color="#000000">data</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#434f54">&#47;&#47;Variable for storing received data</font>
 
-void setup()
-{
-  Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
-  pinMode(13, OUTPUT);        //Sets digital pin 13 as output pin
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Sets the data rate in bits per second (baud) for serial data transmission</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Sets digital pin 13 as output pin</font>
 
-}
-void loop()
-{
-  if (Serial.available() > 0) // Send data only when you receive data:
-  {
-    data = Serial.read();      //Read the incoming data and store it into variable data
-    if (data == 'A')           //Checks whether value of data is equal to "A"
-      digitalWrite(13, HIGH);  //If value is "A" then LED turns ON
-    else if (data == 'B')      //Checks whether value of data is equal to "B"
-      digitalWrite(13, LOW);   //If value is "B" then LED turns OFF
-  }
-}
-````
+<font color="#000000">}</font>
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&gt;</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#434f54">&#47;&#47; Send data only when you receive data:</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">data</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Read the incoming data and store it into variable data</font>
+ &nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">data</font> <font color="#434f54">==</font> <font color="#00979c">&#39;A&#39;</font><font color="#000000">)</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Checks whether value of data is equal to &#34;A&#34;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;<font color="#434f54">&#47;&#47;If value is &#34;A&#34; then LED turns ON</font>
+ &nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">data</font> <font color="#434f54">==</font> <font color="#00979c">&#39;B&#39;</font><font color="#000000">)</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;Checks whether value of data is equal to &#34;B&#34;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;<font color="#434f54">&#47;&#47;If value is &#34;B&#34; then LED turns OFF</font>
+ &nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+
+</pre>
+
+
 <hr>
 
 
