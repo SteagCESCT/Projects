@@ -187,38 +187,67 @@ We can see the distance measured from the Ultrasonic sensor from the Serial Moni
 
 <hr>
 
-### Tesing HCSR04 UltraSonic Module
+### Tesing LCD Module
+
+Here we are using LCD Module with **12C addons** for I2C Communication , which will only need two wires for communication, in other way we need to use 14 pins. 
+
+Since the I2C is a addon we need  to insert the library on Arduino IDE first. For that first downlaod the [Arduino-LiquidCrystal-I2C-library.zip](sr/lib/Arduino-LiquidCrystal-I2C-library.zip), Then click **Sketch -> Include Library -> Add .ZIP Library**
+
+![inlcude lib](src/images/includeLib.png)
+
+now we successfully added the I2C library. 
+
+
+#### Uplaod and Compaile Code 
 
 <pre>
-<font color="#434f54">&#47;&#47; include the library code:</font>
-<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><font color="#d35400">Wire</font><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font> 
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal_I2C</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
 
-<font color="#434f54">&#47;&#47; initialize the library by associating any needed LCD interface pin</font>
-<font color="#434f54">&#47;&#47; with the arduino pin number it is connected to</font>
-<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#000000">rs</font> <font color="#434f54">=</font> <font color="#000000">12</font><font color="#434f54">,</font> <font color="#000000">en</font> <font color="#434f54">=</font> <font color="#000000">11</font><font color="#434f54">,</font> <font color="#000000">d4</font> <font color="#434f54">=</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">d5</font> <font color="#434f54">=</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">d6</font> <font color="#434f54">=</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">d7</font> <font color="#434f54">=</font> <font color="#000000">2</font><font color="#000000">;</font>
-<b><font color="#d35400">LiquidCrystal</font></b> <b><font color="#d35400">lcd</font></b><font color="#000000">(</font><font color="#000000">rs</font><font color="#434f54">,</font> <font color="#000000">en</font><font color="#434f54">,</font> <font color="#000000">d4</font><font color="#434f54">,</font> <font color="#000000">d5</font><font color="#434f54">,</font> <font color="#000000">d6</font><font color="#434f54">,</font> <font color="#000000">d7</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#434f54">&#47;&#47; Set the LCD address to 0x27 for a 16 chars and 2 line display</font>
+<b><font color="#d35400">LiquidCrystal_I2C</font></b> <b><font color="#d35400">lcd</font></b><font color="#000000">(</font><font color="#000000">0x27</font><font color="#434f54">,</font> <font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
 
-<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
- &nbsp;<font color="#434f54">&#47;&#47; set up the LCD&#39;s number of columns and rows:</font>
- &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#434f54">&#47;&#47; Print a message to the LCD.</font>
- &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;hello, world!&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+&#09;<font color="#434f54">&#47;&#47; initialize the LCD</font>
+&#09;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+
+&#09;<font color="#434f54">&#47;&#47; Turn on the blacklight and print a message.</font>
+&#09;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">backlight</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+&#09;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Hello, world!&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
 <font color="#000000">}</font>
 
-<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
- &nbsp;<font color="#434f54">&#47;&#47; set the cursor to column 0, line 1</font>
- &nbsp;<font color="#434f54">&#47;&#47; (note: line 1 is the second row, since counting begins with 0):</font>
- &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#434f54">&#47;&#47; print the number of seconds since reset:</font>
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+&#09;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
  &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&#47;</font> <font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;
 <font color="#000000">}</font>
 
 </pre>
 
-You can find the Sketch from **File -> Examples -> LiquidCrystal -> Hello World**
+#### Connect LCD Module with Arduino
+
+ Demonstrates the use a 16x2 LCD display.  The I2C LiquidCrystal Module comes with 4-pins and connect them with follwing model.
+
+ * LCD SCL - Arduino SCL
+ * LCD SDA - Arduino SDA
+ * LCD GND - Arduino GND
+ * LCD VCC - Arduino VCC
+
+ This sketch prints "Hello World!" to the LCD
+ and shows the time.
+
+ ![lcd connection](src/images/LCD_test.png)
+
+<hr>
+
+![lcd demo](src/images/lcd_demo.gif)
+
+<hr>
 
 
-![LCD Example SKetch](src/images/examplesketch.png).
+
 
 
 
