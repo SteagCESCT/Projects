@@ -187,4 +187,38 @@ We can see the distance measured from the Ultrasonic sensor from the Serial Moni
 
 <hr>
 
+### Tesing HCSR04 UltraSonic Module
+
+<pre>
+<font color="#434f54">&#47;&#47; include the library code:</font>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+
+<font color="#434f54">&#47;&#47; initialize the library by associating any needed LCD interface pin</font>
+<font color="#434f54">&#47;&#47; with the arduino pin number it is connected to</font>
+<font color="#00979c">const</font> <font color="#00979c">int</font> <font color="#000000">rs</font> <font color="#434f54">=</font> <font color="#000000">12</font><font color="#434f54">,</font> <font color="#000000">en</font> <font color="#434f54">=</font> <font color="#000000">11</font><font color="#434f54">,</font> <font color="#000000">d4</font> <font color="#434f54">=</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">d5</font> <font color="#434f54">=</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">d6</font> <font color="#434f54">=</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">d7</font> <font color="#434f54">=</font> <font color="#000000">2</font><font color="#000000">;</font>
+<b><font color="#d35400">LiquidCrystal</font></b> <b><font color="#d35400">lcd</font></b><font color="#000000">(</font><font color="#000000">rs</font><font color="#434f54">,</font> <font color="#000000">en</font><font color="#434f54">,</font> <font color="#000000">d4</font><font color="#434f54">,</font> <font color="#000000">d5</font><font color="#434f54">,</font> <font color="#000000">d6</font><font color="#434f54">,</font> <font color="#000000">d7</font><font color="#000000">)</font><font color="#000000">;</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">&#47;&#47; set up the LCD&#39;s number of columns and rows:</font>
+ &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47; Print a message to the LCD.</font>
+ &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;hello, world!&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">&#47;&#47; set the cursor to column 0, line 1</font>
+ &nbsp;<font color="#434f54">&#47;&#47; (note: line 1 is the second row, since counting begins with 0):</font>
+ &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47; print the number of seconds since reset:</font>
+ &nbsp;<b><font color="#d35400">lcd</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&#47;</font> <font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+</pre>
+
+You can find the Sketch from **File -> Examples -> LiquidCrystal -> Hello World**
+
+
+![LCD Example SKetch](src/images/examplesketch.png).
+
+
 
