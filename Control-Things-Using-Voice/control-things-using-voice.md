@@ -328,4 +328,15 @@ we completed the work and as last step we need to proceeds ***Review and finish*
 and we need to the same IFTTT Applet for Turn Off the Light .after that use your  Google Assistant in your mobile phone to control devices
 
 
+### Testing
+
+Open Google assist and tell **"Turn on light"** or **"Turn of light"** .
+
+![google test](src/images/assit.jpg)
+
+
+<hr>
+
+
+
 ## Thank You.
