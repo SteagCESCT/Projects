@@ -195,6 +195,9 @@ Since the I2C is a addon we need  to insert the library on Arduino IDE first. Fo
 
 ![inlcude lib](src/images/includeLib.png)
 
+then select the **.Zip** file and click open.
+![add zip file](src/images/openLib.png)
+
 now we successfully added the I2C library. 
 
 
