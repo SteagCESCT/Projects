@@ -255,7 +255,7 @@ now we successfully added the I2C library.
 
 #### Wiring
 
-![final wiring](src/images/final.PNG)
+![final wiring](src/images/final.png)
 
 <hr>
 
