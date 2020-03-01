@@ -2,7 +2,7 @@
 
 Why Build prototypes? When you have an idea you can begin thinking about how to build it, the first and most fundamental question you must answer is this: Are you building the right thing? The purpose of prototyping is to answer that question.
 
-Prototyping is an itrative process that begin with something as simple as a sketch, a computer design, or a physical mock up. This earliest stage is a low-fidelity prototype , and its purpose is to begin testing the idea, to begin answering those questions about whether this is something customer want. Even before this earliest stage of prototyping, designers, engineers, and business people get together, interview stakeholders, and begin to devlop an idea of what exactly this product is going to be answering those same questions. It's those earliest requirements that go into making a low-fidelity prototype. (Src:Prototyping with purpose|Mouser Electronics).
+Prototyping is an itrative process that begin with something as simple as a sketch, a computer design, or a physical mock up. This earliest stage is a low-fidelity prototype , and its purpose is to begin testing the idea, to begin answering those questions about whether this is something customer want. Even before this earliest stage of prototyping, designers, engineers, and business people get together, interview stakeholders, and begin to devlop an idea of what exactly this product is going to be answering those same questions. It's those earliest requirements that go into making a low-fidelity prototype. (src:Prototyping with purpose|Mouser Electronics).
 
 ## Arduino for prototyping
 
@@ -30,10 +30,13 @@ There are many other microcontrollers and microcontroller platforms available fo
 
 * **Open source and extensible software** - The Arduino software is published as open source tools, available for extension by experienced programmers. The language can be expanded through C++ libraries, and people wanting to understand the technical details can make the leap from Arduino to the AVR C programming language on which it's based. Similarly, you can add AVR-C code directly into your Arduino programs if you want to.
 
-* **Open source and extensible hardware** - The plans of the Arduino boards are published under a Creative Commons license, so experienced circuit designers can make their own version of the module, extending it and improving it. Even relatively inexperienced users can build the breadboard version of the module in order to understand how it works and save money.
+* **Open source and extensible hardware** - The plans of the Arduino boards are published under a Creative Commons license, so experienced circuit designers can make their own version of the module, extending it and improving it. Even relatively inexperienced users can build the breadboard version of the module in order to understand how it works and save money.(src:arduino.cc)
 
 <hr>
 
+## Learn By Doing
+
+We belive learn doing is one of best learing practise and that's why we created this project repo page, This page include several projects with complete step by step guide, please feel free to use and modify the code and diagrams. 
 
 
 ## Available Project Documentations. 
