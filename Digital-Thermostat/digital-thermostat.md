@@ -114,6 +114,16 @@ Select the **DHT Sensor library** by Adafruit, and click **Install**.so we succe
  &nbsp;<font color="#434f54">&#47;&#47; Reading temperature or humidity takes about 250 milliseconds!</font>
  &nbsp;<font color="#434f54">&#47;&#47; Sensor readings may also be up to 2 seconds &#39;old&#39; (its a very slow sensor)</font>
  &nbsp;<font color="#00979c">float</font> <font color="#000000">humi</font> <font color="#434f54">=</font> <font color="#000000">dht</font><font color="#434f54">.</font><font color="#d35400">readHumidity</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#434f54">&#47;&#47; Read temperature as Celsius (the default)</font>
+ &nbsp;<font color="#00979c">float</font> <font color="#000000">temp</font> <font color="#434f54">=</font> <font color="#000000">dht</font><font color="#434f54">.</font><font color="#d35400">readTemperature</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Humidity: &#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">humi</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">&#47;&#47;print humudity</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34; &nbsp;&nbsp;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">&#34;Temperature: &#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">temp</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">println</font><font color="#000000">(</font><font color="#005c5f">&#34;&#34;</font><font color="#000000">)</font><font color="#000000">;</font>
+
+<font color="#000000">}</font>
 
 </pre>
 

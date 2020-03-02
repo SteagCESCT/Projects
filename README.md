@@ -50,4 +50,25 @@ We belive learn by doing is one of best learing practise and that's why we creat
 
 <hr>
 
-#### Yess! You can also work on your own idea and build your own poject.
+##### Yess! You can also work on your own idea and build your own poject.
+
+### Avialble Tools at Steag Center 
+
+#### Development Boards
+
+* Raspberry Pi B+
+* Arduino Uno
+* Arduino Mega
+* NodeMCU
+
+#### Communication Module
+
+* Bluetooth Module - HC05
+* 434 mhz transmitter and receiver 
+* nRF2.4Ghz transceiver
+
+#### Sensors
+
+#### Acutaors 
+
+
