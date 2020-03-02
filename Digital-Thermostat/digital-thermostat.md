@@ -62,7 +62,7 @@ Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and install 
 ![Arduino IDE Download](../docs/images/arduinoide01.JPG)
 
 #### 1.2 walk-through the Arduino Introduction page to learn basics
-If you are new to the arduino system, you can learn the [ Arduino basics from here](arduino-intro.md) , after reading then go to the next step. 
+If you are new to the arduino system, you can learn the [ Arduino basics from here](arduino-basics.md) , after reading then go to the next step. 
 
 ### Step 2: Programming
 

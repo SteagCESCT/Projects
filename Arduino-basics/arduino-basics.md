@@ -22,21 +22,134 @@ Simple, clear programming environment - The Arduino Software (IDE) is easy-to-us
 
 <hr>
 
+## Arduino Uno
+
+![arduino uno](src/images/arduinouno.jpg)
+
+**Arduino Uno** is a microcontroller board based on the ATmega328P (datasheet). It has **14 digital input/output** pins (of which 6 can be used as PWM outputs), **6 analog inputs** , a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button.
+
+**"Uno"** means one in Italian and was chosen to mark the release of Arduino Software (IDE) 1.0.
+
+<hr>
+
 ## Arduino Software (IDE)
 
+![Arduino IDE Sketch](../docs/images/arduinoide02.JPG)
+
 The Arduino Integrated Development Environment - or Arduino Software (IDE) - contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions and a series of menus. It connects to the **Arduino and Genuino hardware** to upload programs and communicate with them.
+
 
 ### Writing Sketches
 
 Programs written using Arduino Software (IDE) are called sketches. These sketches are written in the text editor and are saved with the file extension .ino. The editor has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino Software (IDE), including complete error messages and other information. The bottom righthand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor.
 
-![](src/images/IDE_VERIFY_File.jpg) Verify
-Checks your code for errors compiling it.
+<hr>
 
-![](src/images/IDE_UPLOAD_File.jpg) Upload
-Compiles your code and uploads it to the configured board. See uploading below for details.
+### Writing Hello World Sketches
 
-![](src/images/IDE_NEW_File.jpg)  New
-Creates a new sketch.
+Here we we are writing a blink sketch , that will **Trun ON** and **Turn OFF** an LED.
+
+#### Code
+
+<pre>
+<font color="#00979c">void</font> <font color="#000000">Setup</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">13</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+
+</pre>
+
+
+* `Setup()`:   The setup() function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The setup() function will only run once, after each powerup or reset of the Arduino board.
+
+* `pinMode(13,OUTPUT)` :- Configures the specified pin to behave either as an input or an output. See the Digital Pins page for details on the functionality of the pins. 
+
+**Syntax** `pinMode(pin, mode)` :-  **pin** : the Arduino pin number to set the mode of, **mode** :  INPUT, OUTPUT, or INPUT_PULLUP. 
+
+
+* `void loop()` :- After creating a **setup()** function, which initializes and sets the initial values, the **loop()** function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+
+* `digitalWrite(13,HIGH);` :- Write a HIGH value to a digital pin. 
+
+* `digitalWrite(13,LOW);` :- Write LOW value to a digital pin. 
+
+**Syntax** `digitalWrite(pin, value)` , **Parameters** `pin` : the Arduino pin number. `value` : HIGH or LOW.
+
+<hr>
+
+
+#### Compile the code 
+
+You can Compile and verify your code by clicking the **Verify** button on Arduino IDE, this process will check syntax errors. 
+
+![verify code](../Control-Things-Using-Mobile-Phone/src/images/verifycode.png)
+
+after successful compilation you can see **Done Compiling**
+
+![done verify](../Control-Things-Using-Mobile-Phone/src/images//doneverify.JPG)
+<hr>
+
+#### Upload the code into Arduino uno 
+
+After successful compilation we can upload the code into Arduino Uno Devlopment board. for that we need click ***Upload* button.
+
+![uploadcode](../Control-Things-Using-Mobile-Phone/src/images//uploadcode.png)
+
+before upaloading we need to select the devlopment board from the from Arduino IDE **Tools -> Board**  and **Port** from Arduino IDE **Tools -> Port**. 
+
+![selectport](../Control-Things-Using-Mobile-Phone/src/images/selectport.png) 
+<br><br>
+
+![selectboard](../Control-Things-Using-Mobile-Phone/src/images/selectboard.png)
+
+
+here I selected **Arduino Uno** as board and **COM26** as **Port**. 
+
+Then click **Upload**
+
+![doneupload](../Control-Things-Using-Mobile-Phone/src/images/doneupload.JPG)
+
+<hr>
+
+#### Test
+
+onnect the **LED Postive** pin on **Arduino Pin 13** and **Negative Pin** on **Arduino Grond (GND)**
+
+![arduinoandled](../Control-Things-Using-Mobile-Phone/src/images/ledandarduino.png)
+
+You can see the LED Blinking. 
+
+<hr>
+
+#### Conclusion
+
+Arduino is very powerfull and easy tool, it can increse your prototyping process fast and quickly with availble Add-ons.
+
+If you want to learn more! , check out these. 
+
+## Available Project Documentations.
+
+
+1. [Control Things using Mobile Phone](Control-Things-Using-Mobile-Phone/control-things-using-phone.md) (beginner)
+2. [Control things using Voice](Control-Things-Using-Voice/control-things-using-voice.md) (intermediate)
+3. [Digital Thermostat](Digital-Thermostat/digital-thermostat.md) (beginner)
+4. [Digital Scale](Digital-Scale/digital-scale.md) (beginner)
+
+
+<hr>
+
+
+
+
+
+
+
 
 

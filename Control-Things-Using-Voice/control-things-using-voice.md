@@ -15,6 +15,9 @@ In this workshop we will learn about how to control things using your voice, for
 ## 1. Setup Arduino IDE
 
 You can download and Install Arduino IDE from here [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+
+If you are new to the arduino system, you can learn the [ Arduino basics from here](arduino-basics.md) , after reading then go to the next step. 
+
 In default Arduino IDE only Support Native boards like UNO,Nano.. etc , so we need to install NodeMCU Board  and MQTT Libraries .
 
  **NodeMCU Board Definition**

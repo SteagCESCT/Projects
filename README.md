@@ -38,6 +38,8 @@ There are many other microcontrollers and microcontroller platforms available fo
 
 We belive learn by doing is one of best learing practise and that's why we created this project page, this page include several projects with complete step by step guide, please feel free to use and modify the code and diagrams. 
 
+* [Arduino Getting Started Guide ](arduino-basics.md)
+
 
 ## Available Project Documentations. 
 
