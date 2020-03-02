@@ -24,7 +24,7 @@ Simple, clear programming environment - The Arduino Software (IDE) is easy-to-us
 
 ## Arduino Uno
 
-![arduino uno](src/images/arduinouno.jpg)
+![arduino uno](src/Images/arduinouno.jpg)
 
 **Arduino Uno** is a microcontroller board based on the ATmega328P (datasheet). It has **14 digital input/output** pins (of which 6 can be used as PWM outputs), **6 analog inputs** , a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button.
 
